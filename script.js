@@ -36,7 +36,8 @@ if (numbers) {
 if (symbols) {
   masterCaracterArrey = masterCaracterArrey.concat(symbols); 
 }
- console.log(masterCaracterArrey) 
+ 
+console.log(masterCaracterArrey) 
 
   
 var finalPassword = ""

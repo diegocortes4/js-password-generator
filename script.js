@@ -28,6 +28,14 @@ if (lower) {
 }
  console.log(masterCaracterArrey) 
 
+  
+var finalPassword = ""
+for (let index = 0; index < password; index++) {
+  var randomindex = Math.floor(Math.random() * masterCaracterArrey.length);
+  const element = masterCaracterArrey[randomindex];
+  finalPassword = finalPassword+element
+
+}
 
 
 

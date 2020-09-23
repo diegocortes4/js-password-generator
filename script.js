@@ -19,12 +19,22 @@ function generatePassword(){
   var password = prompt("How long will you like your password?");
   var userupper = confirm("Would you like to use upper case letters?")
   var lower = confirm("Would you like to use lower case letters?")
+  var numbers = confirm("Would you like to use numbers?")
+  var symbols = confirm("Would you like to use symbols?")
   var masterCaracterArrey = []
-if (userupper) {
+
+
+  if (userupper) {
    masterCaracterArrey = masterCaracterArrey.concat(upperLetters);
 }
 if (lower) {
    masterCaracterArrey = masterCaracterArrey.concat(lowerCase); 
+}
+if (numbers) {
+  masterCaracterArrey = masterCaracterArrey.concat(numbers); 
+}
+if (symbols) {
+  masterCaracterArrey = masterCaracterArrey.concat(symbols); 
 }
  console.log(masterCaracterArrey) 
 

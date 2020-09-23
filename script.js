@@ -20,25 +20,26 @@ function generatePassword(){
   var userupper = confirm("Would you like to use upper case letters?")
   var lower = confirm("Would you like to use lower case letters?")
   var masterCaracterArrey = []
-
-}if (userupper) {
-  masterCaracterArrey = masterCaracterArrey.concat(upperLetters);
+if (userupper) {
+   masterCaracterArrey = masterCaracterArrey.concat(upperLetters);
 }
 if (lower) {
-  masterCaracterArrey = masterCaracterArrey.concat(lowerCase); 
+   masterCaracterArrey = masterCaracterArrey.concat(lowerCase); 
 }
-console.log(masterCaracterArrey) 
+ console.log(masterCaracterArrey) 
 
 
+
+
+
+
+  
+  return finalPassword
 
 
 
  
- return finalPassword
-
-
-
-
+}
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 

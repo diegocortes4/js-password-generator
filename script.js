@@ -3,8 +3,8 @@ var generateBtn = document.querySelector("#generate");
 
 var upperLetters = ["A","B","C"]
 var lowerCase = ["a","b","c"]
-var numbers = ["1","2","3"]
-var symbols = ["!","?","@"]
+var numberS = ["1","2","3","4","5","6","7","8","9"]
+var symbolS = ["!","?","@"]
 
 
 // Write password to the #password input
@@ -17,10 +17,10 @@ function writePassword() {
 }
 function generatePassword(){
   var password = prompt("How long will you like your password?");
-  var userupper = confirm("Would you like to use upper case letters?")
-  var lower = confirm("Would you like to use lower case letters?")
-  var numbers = confirm("Would you like to use numbers?")
-  var symbols = confirm("Would you like to use symbols?")
+  var userupper = confirm("Would you like to use upper case letters?");
+  var lower = confirm("Would you like to use lower case letters?");
+  var numberS = confirm("Would you like to use numbers?");
+  var symbolS = confirm("Would you like to use symbols?");
   var masterCaracterArrey = []
 
 
@@ -30,11 +30,11 @@ function generatePassword(){
 if (lower) {
    masterCaracterArrey = masterCaracterArrey.concat(lowerCase); 
 }
-if (numbers) {
-  masterCaracterArrey = masterCaracterArrey.concat(numbers); 
+if (numberS) {
+  masterCaracterArrey = masterCaracterArrey.concat(numberS); 
 }
-if (symbols) {
-  masterCaracterArrey = masterCaracterArrey.concat(symbols); 
+if (symbolS) {
+  masterCaracterArrey = masterCaracterArrey.concat(symbolS); 
 }
  
 console.log(masterCaracterArrey) 
